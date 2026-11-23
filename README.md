@@ -1,15 +1,14 @@
-# DATS 6401: Weeks 11-12 — F1 APIs & Model Serving
+# DATS 6401: Weeks 11-12 : F1 APIs & Model Serving
 
 **Soumay Patidar**
 
 ## What's in here
 
 | File | What it does |
-|---|---|
-| `app.py` | Streamlit app with 2 tabs — Part A (F1 API client) + Part B (podium prediction client) |
+| `app.py` | Streamlit app with 2 tabs : Part A (F1 API client) + Part B (podium prediction client) |
 | `server.py` | FastAPI server that serves the F1 podium prediction model |
 | `train_model.py` | Trains the model on F1 race results (2000-2024) and saves `model.joblib` |
-| `test_endpoint.py` | Test script — 6 tests covering predictions, bad input, and health check |
+| `test_endpoint.py` | Test script : 6 tests covering predictions, bad input, and health check |
 | `data/` | F1 Ergast CSV files used for model training |
 | `requirements.txt` | All dependencies |
 
@@ -19,7 +18,7 @@
 pip install -r requirements.txt
 ```
 
-## Part B — Run the server first
+## Part B : Run the server first
 
 ```bash
 # 1. Train the model (creates model.joblib)
@@ -35,7 +34,7 @@ uvicorn server:app --reload
 python test_endpoint.py
 ```
 
-## Part A — Run the Streamlit client
+## Part A : Run the Streamlit client
 
 ```bash
 streamlit run app.py
